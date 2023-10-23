@@ -38,7 +38,7 @@ const BlockExplorer = ()  => {
       {blockData && (
         <div>
           <h3>Block Number: {blockData.number}</h3>
-          <p>Timestamp: {new Date(blockData.timestamp * 1000).toLocaleString()}</p>
+          <p>Timestamp: {new Date(Number(blockData.timestamp) * 1000).toLocaleString()}</p>
           <p>Transactions: {blockData.transactions.length}</p>
           {/* Add more information as needed */}
         </div>

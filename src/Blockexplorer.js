@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Web3 from 'web3';
 
-const BlockExplorer = () => {
+const BlockExplorer = ()  => {
   const [blockNumber, setBlockNumber] = useState('');
   const [blockData, setBlockData] = useState(null);
   const [error, setError] = useState(null);
